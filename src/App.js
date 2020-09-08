@@ -23,7 +23,6 @@ const App = () => {
  
          const changeLikes = id => {
            setPosts(posts.map(post => {
-             console.log('IM HERE')
              if (id === post.id){
                return {...post, likes: post.likes + 1}
              }
